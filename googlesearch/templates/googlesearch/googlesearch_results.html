@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load googlesearch_inclusion_tags %}
+
+{% block content %}
+    <div class="page section_user">
+	    <div class="title">
+		    <h1>{{ title }}</h1>
+		</div><!--/title-->
+				
+		<div class="generic">
+		    <h2>You searched for <strong>{{ request.GET.q }}</strong></h2>
+			<div class="rich">
+                {% googlesearch_results %}
+			</div>
+		</div><!--/generic-->
+
+	</div><!--/page-->
+{% endblock %}
