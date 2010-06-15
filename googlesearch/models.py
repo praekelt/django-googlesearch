@@ -1,9 +1,9 @@
 from django.db import models
 
-from options.models import Options
+from preferences.models import Preferences
 
-class GoogleSearchOptions(Options):
-    __module__ = 'options.models'
+class GoogleSearchPreferences(Preferences):
+    __module__ = 'preferences.models'
 
     partner_id = models.CharField(
         max_length=128,
@@ -13,5 +13,5 @@ class GoogleSearchOptions(Options):
     )
 
     class Meta():
-        verbose_name = "Google search options"
-        verbose_name_plural = "Google search options"
+        verbose_name = "Google search preferences"
+        verbose_name_plural = "Google search preferences"

@@ -1,13 +1,13 @@
 from django import template
 
-from options import options
+from preferences import preferences
 
 register = template.Library()
 
 @register.inclusion_tag('googlesearch/inclusion_tags/googlesearch_input.html', takes_context=True)
 def googlesearch_input(context):
     context.update({
-        'options': options.GoogleSearchOptions
+        'preferences': preferences.GoogleSearchPreferences
     })
     return context
 

@@ -10,6 +10,9 @@ setup(
     license='BSD',
     url='http://github.com/praekelt/django-googlesearch',
     packages = find_packages(),
+    install_requires = [
+        'django-preferences',
+    ],
     include_package_data=True,
     classifiers = [
         "Programming Language :: Python",
