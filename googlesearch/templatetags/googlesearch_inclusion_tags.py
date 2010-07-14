@@ -6,9 +6,6 @@ register = template.Library()
 
 @register.inclusion_tag('googlesearch/inclusion_tags/googlesearch_input.html', takes_context=True)
 def googlesearch_input(context):
-    context.update({
-        'preferences': preferences.GoogleSearchPreferences
-    })
     return context
 
 @register.inclusion_tag('googlesearch/inclusion_tags/googlesearch_results.html')
