@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-googlesearch',
-    version='0.0.3',
+    version='0.0.4',
     description='Django Google custom search engine app.',
     long_description = open('README.rst', 'r').read(),
     author='Praekelt Foundation',
@@ -23,4 +23,5 @@ setup(
         "Intended Audience :: Developers",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
+    zip_safe=False,
 )
