@@ -29,4 +29,27 @@ Installation
         ...other processors...
     )
 
+Usage
+-----
+
+Once installed you can add a Google search box to your templates by using the ``googlesearch_input`` template tag, i.e.::
+
+    {% load googlesearch_inclusion_tags %}
+    
+    ...some html...
+    
+    {% googlesearch_input %}
+    
+    ...some more html...
+
+By default search results are displayed through the view with URL named ``googlesearch_results``, as defined in ``googlesearch.urls``.
+You can create your own URL named ``googlesearch_results`` and include the ``googlesearch_results`` template tag in its template to display results, i.e.::
+
+    {% load googlesearch_inclusion_tags %}
+    
+    ...some html...
+    
+    {% googlesearch_results %}
+    
+    ...some more html...
 
