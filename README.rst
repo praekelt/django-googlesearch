@@ -2,6 +2,8 @@ Django Google Search
 ====================
 **Django Google custom search engine app.**
 
+Provides a simple tag rendering a Google Custom Search Engine input field and a view displaying search results.
+
 .. contents:: Contents
     :depth: 5
 
@@ -23,8 +25,8 @@ Installation
 #. Optionally add ``"django.core.context_processors.request",`` to your ``TEMPLATE_CONTEXT_PROCESSORS`` setting, i.e.::
 
     TEMPLATE_CONTEXT_PROCESSORS = (
-        ...other processors...
         "django.core.context_processors.request",
+        ...other processors...
     )
 
 
