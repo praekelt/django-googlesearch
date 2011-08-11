@@ -29,6 +29,8 @@ Installation
         ...other processors...
     )
 
+   We need a ``request`` object when rendering the search input field and results to be able to display the search query value. This is optional and is not required for operation but is highly recommended. 
+
 Usage
 -----
 
