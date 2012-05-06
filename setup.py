@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-googlesearch',
-    version='0.0.5',
+    version='0.0.6',
     description='Django Google custom search engine app.',
     long_description = open('README.rst', 'r').read() + open('AUTHORS.rst', 'r').read() + open('CHANGELOG.rst', 'r').read(),
     author='Praekelt Foundation',
@@ -11,6 +11,9 @@ setup(
     url='http://github.com/praekelt/django-googlesearch',
     packages = find_packages(),
     include_package_data=True,
+    install_requires = [
+        'Django',
+    ],
     test_suite="setuptest.SetupTestSuite",
     tests_require=[
         'django-setuptest>=0.0.6',
