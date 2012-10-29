@@ -1,0 +1,14 @@
+{% load i18n %}
+
+<div class="googlesearch-form-inclusion">
+    <form id="cref" action="{% url googlesearch-results %}">
+        <!--<input type="hidden" name="cref" value="{% url googlesearch-cref-cse %}" />
+        -->
+        <input type="hidden" name="cref" value="http://www.guha.com/cref_cse.xml"" />
+
+        <input type="hidden" name="cof" value="FORID:9" />
+        <input type="text" name="q" />
+        <input type="submit" name="sa" value="{% trans "Search" %}" />
+    </form>
+    <script type="text/javascript" src="http://www.google.com/cse/brand?form=cref"></script>
+</div>    

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GoogleCustomizations>
+    <CustomSearchEngine>
+        <Title>Solar Energy</Title>
+        <Description>A Google Custom Search Engine that only includes solar energy sites</Description>
+        <Context>
+           <BackgroundLabels>
+             <Label name="solar_example" mode="FILTER" />
+          </BackgroundLabels>
+
+        </Context>
+        <LookAndFeel nonprofit="true">
+           <!-- In the spirit of solar, this search engine has a yellow background with orange titles -->
+           <Colors url="#FF6600" background="#FFFF33" border="#FF6600" title="#FF3300" text="#000000" visited="#663399" light="#FF0077"/>
+        </LookAndFeel>
+    </CustomSearchEngine>
+
+   <!-- The Annotations section. This example illustrates the 3 different ways of specifying annotations -->
+
+    <!-- Link to a XML annotations files -->
+
+    <Include type="Annotations" href="http://guha.com/cref_anno.xml"/>
+
+    <!-- Use a tool provided by Google (or anyone else) to automatically generate a set of annotations. This will grabs all the links from http://dmoz.org/Science/Technology/Energy/Renewable/Solar/ and assign the label solar_example to those links. You can add as many &label= parameters as you want. -->
+    <Include type="Annotations" href="http://www.google.com/cse/tools/makeannotations?url=http://dmoz.org/Science/Technology/Energy/Renewable/Solar/&amp;label=solar_example" />
+
+   <!-- You need not include files to add annotations. Adding them inline as shown here will work as well -->
+   <Annotations>
+    <Annotation about="http://www.solarenergy.org/*">
+      <Label name="solar_example"/>
+    </Annotation>
+
+   <Annotation about="http://www.solarfacts.net/*">
+       <Label name="solar_example"/>
+   </Annotation>
+  </Annotations>
+
+</GoogleCustomizations>
+
