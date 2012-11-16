@@ -2,9 +2,8 @@
 <GoogleCustomizations>
 
     <CustomSearchEngine>
-        <Title>Solar Energy</Title>
-        <!--<Description>A Google Custom Search Engine that only includes solar energy sites</Description>
-        -->
+        <Title>Search</Title>
+        <!--<Description></Description>-->
         <Context>
            <BackgroundLabels>
              <Label name="django_googlesearch" mode="FILTER" />
