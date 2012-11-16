@@ -2,7 +2,7 @@ Django Google Search
 ====================
 **Django Google custom search engine app.**
 
-Provides a simple tag rendering a Google Custom Search Engine input field and a view displaying search results.
+Provides a simple tag rendering a Google Custom Search Engine input field and a view displaying search results. http://www.google.com/cse/docs/cref.html.
 
 .. contents:: Contents
     :depth: 5

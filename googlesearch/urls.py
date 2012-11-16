@@ -12,8 +12,8 @@ urlpatterns = patterns(
 
     url(
         r'^cref-cse\.xml/$', 
-        'django.views.generic.simple.direct_to_template', 
-        {'template': 'googlesearch/cref_cse.xml'},
+        'googlesearch.views.cref_cse', 
+        {},
         name='googlesearch-cref-cse'
     ),
 )
