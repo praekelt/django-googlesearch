@@ -1,6 +1,10 @@
 Changelog
 =========
 
+next
+----
+#. Refactor to use a linked custom search engine as described at http://www.google.com/cse/docs/cref.html.
+
 0.0.6
 -----
 #. Packaging and test setup cleanup.

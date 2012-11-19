@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GoogleCustomizations>
+
+    <CustomSearchEngine>
+        <Title>Search</Title>
+        <!--<Description></Description>-->
+        <Context>
+           <BackgroundLabels>
+             <Label name="django_googlesearch" mode="FILTER" />
+          </BackgroundLabels>
+        </Context>
+        <!--
+        <LookAndFeel nonprofit="true">
+           <Colors url="#FF6600" background="#FFFF33" border="#FF6600" title="#FF3300" text="#000000" visited="#663399" light="#FF0077"/>
+        </LookAndFeel>
+        -->
+    </CustomSearchEngine>
+
+    <Annotations>
+        <Annotation about="http{% if request.is_secure %}s{%endif %}://{{ request.META.HTTP_HOST }}/*">
+            <Label name="django_googlesearch"/>
+        </Annotation>
+    </Annotations>
+
+</GoogleCustomizations>
+

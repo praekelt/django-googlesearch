@@ -2,7 +2,9 @@ Django Google Search
 ====================
 **Django Google custom search engine app.**
 
-Provides a simple tag rendering a Google Custom Search Engine input field and a view displaying search results.
+Provides a simple tag rendering a Google Custom Search Engine input field and a view displaying search results. 
+The product is an implementation of http://www.google.com/cse/docs/cref.html. The custom search engine definition 
+is stored on your site, not by Google. This allows you to define a search engine in version controlled code.
 
 .. contents:: Contents
     :depth: 5
@@ -13,10 +15,6 @@ Installation
 #. Install or add ``django-googlesearch`` to your Python path.
 
 #. Add ``googlesearch`` to your ``INSTALLED_APPS`` setting.
-
-#. Add a ``GOOGLE_SEARCH_PARTNER_ID`` setting to your project's ``settings.py`` file. This setting specifies the Google Custom Search Engine ID to use when rendering the Google search box, as provided by Google, i.e.::
-
-    GOOGLE_SEARCH_PARTNER_ID = 'partner-pub-329847239847234:xcvx-3kasd'
 
 #. Add googlesearch url include to your project's ``urls.py`` file::
 
@@ -44,8 +42,8 @@ Once installed you can add a Google search box to your templates by using the ``
     
     ...some more html...
 
-By default search results are displayed through the view with URL named ``googlesearch_results``, as defined in ``googlesearch.urls``.
-You can create your own URL named ``googlesearch_results`` and include the ``googlesearch_results`` template tag in its template to display results, i.e.::
+By default search results are displayed through the view with URL named ``googlesearch-results``, as defined in ``googlesearch.urls``.
+You can create your own URL named ``googlesearch-results`` and include the ``googlesearch_results`` template tag in its template to display results, i.e.::
 
     {% load googlesearch_inclusion_tags %}
     

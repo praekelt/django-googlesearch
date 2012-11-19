@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load i18n googlesearch_inclusion_tags %}
+
+{% block content %}
+    <div class="googlesearch-results">
+
+	    <div class="title">{% trans "Search results" %}</div>
+	
+        <!-- {{ request.GET.q }} -->
+
+        <div class="results">
+            {% googlesearch_results %}
+        </div>
+
+	</div>
+{% endblock %}
