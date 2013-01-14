@@ -32,13 +32,13 @@ Installation
 Usage
 -----
 
-Once installed you can add a Google search box to your templates by using the ``googlesearch_input`` template tag, i.e.::
+Once installed you can add a Google search box to your templates by using the ``googlesearch_form`` template tag, i.e.::
 
     {% load googlesearch_inclusion_tags %}
     
     ...some html...
     
-    {% googlesearch_input %}
+    {% googlesearch_form %}
     
     ...some more html...
 
