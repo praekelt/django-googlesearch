@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.1
+0.1.2
 -----
 #. Refer to correct template tag in help text. Thanks grafyte.
 
