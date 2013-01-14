@@ -1,8 +1,8 @@
 Changelog
 =========
 
-next
-----
+0.1.1
+-----
 #. Refer to correct template tag in help text. Thanks grafyte.
 
 0.1
