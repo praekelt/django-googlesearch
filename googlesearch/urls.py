@@ -2,7 +2,7 @@ import django
 version = django.get_version()
 
 if version < 1.6:
-    from django.conf.urls.default import patterns, url
+    from django.conf.urls.defaults import patterns, url
 else:
     from django.conf.urls import patterns, url
 
