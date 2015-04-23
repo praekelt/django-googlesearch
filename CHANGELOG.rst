@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.2
+---
+#. Django 1.6 compatibility.
+
 0.1.2
 -----
 #. Refer to correct template tag in help text. Thanks grafyte.
